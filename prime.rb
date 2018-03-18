@@ -2,11 +2,7 @@
 require 'prime'
 
 def prime?(number)
-  Prime.each do |p|
-    if p == number
-      true
-    else
-      false
-    end
+  return false if number <= 1
+    Math.sqrt(number).to_i.downto(2).each {|i| return false if number % i == 0}
+    true
   end
-end
