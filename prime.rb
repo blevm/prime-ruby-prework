@@ -1,5 +1,5 @@
 # Add  code here!
-require prime
+require Prime
 
 def prime?(number)
   Prime.each do |p|
